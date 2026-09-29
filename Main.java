@@ -2,7 +2,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        EstrategiaComision estrategia = new ComisionEstandar();
+        EstrategiaComision estrategia =
+                new ComisionPersonalizada("Julia Elizabeth Luna Gámez");
 
         Vendedor vendedor = new Vendedor(
                 "Fernando",
@@ -10,14 +11,7 @@ public class Main {
                 estrategia
         );
 
-        System.out.println("=== COMISIÓN ESTÁNDAR ===");
-        vendedor.mostrarDetalle();
-
-        vendedor.cambiarEstrategia(
-                new ComisionPersonalizada("Daniel")
-        );
-
-        System.out.println("\n=== COMISIÓN PERSONALIZADA ===");
+        System.out.println("=== COMISIÓN PERSONALIZADA ===");
         vendedor.mostrarDetalle();
     }
 }
