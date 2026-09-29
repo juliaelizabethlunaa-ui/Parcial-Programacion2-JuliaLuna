@@ -5,7 +5,7 @@ public class Main {
         EstrategiaComision estrategia = new ComisionEstandar();
 
         Vendedor vendedor = new Vendedor(
-                "Daniel",
+                "Fernando",
                 1000,
                 estrategia
         );
